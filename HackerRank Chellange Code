@@ -1,0 +1,28 @@
+import sys
+
+
+def first_100k_non_prime_numbers():
+	non_prime = []
+    i = 1
+    count = 0
+    while True:
+		if !is_prime(i):
+			non_prime.append(i)
+          	count++
+		i++
+		if count == 100000:
+			break
+	return non_prime
+      
+
+if __name__ =="__main__":
+  non_prime = first_100k_non_prime_numbers()
+  t = input("Enter number of test case : ")
+  while t--:
+    k = input("Enter value of K : ")
+    i = 0
+    for value in non_prime:
+      print(value+" ")
+      i++
+      if i == k:
+        break
