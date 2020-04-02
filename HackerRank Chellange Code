@@ -1,6 +1,5 @@
 #################################Python non prime generator#################################
 
-
 import sys
 
 
@@ -46,4 +45,3 @@ if __name__ =="__main__":
             i += 1
             if i == k:
                 break
-
