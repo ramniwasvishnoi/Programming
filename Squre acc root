@@ -1,0 +1,29 @@
+#*********************Squre acc root*******************
+
+
+import math
+
+
+order = input().strip()
+
+order_list = order.strip('][').split(',')
+
+n = int(input())
+
+prev_val = 0
+
+for _ in range(n):
+    val = int(input())
+    for i in order_list:
+        if str(i.strip()) == 'root':
+            #print('root')
+            val = int(math.sqrt(val))
+        elif str(i.strip()) == 'square':
+            #print('square')
+            val = int(val*val)
+        else:
+            #print('acc')
+            val = val+prev_val
+        #print(val)
+    prev_val = val
+    print(prev_val)
